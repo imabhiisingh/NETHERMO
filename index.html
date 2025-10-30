@@ -3,255 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narmada Engineering - Heat Exchanger Experts</title>
-
-    <!-- Tailwind CSS -->
+    <title>Narmada Engineering - Leading Heat Exchanger Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-zinc-900 text-gray-200">
+<body class="bg-white text-zinc-900">
 
-    <!-- Header -->
-    <header id="home-header" class="bg-black bg-opacity-80 backdrop-blur-sm fixed w-full z-50 top-0 left-0 border-b border-zinc-800 transition-all duration-300">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#hero" class="flex items-center space-x-3">
-                <!-- Image source path updated to assets/images folder -->
+    <header id="home-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
                 <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-12 w-20">
-                <span class="text-xl md:text-2xl font-bold text-white tracking-wider">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
+                <span class="text-xl md:text-2xl font-bold text-zinc-900 tracking-wider">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
             </a>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#hero" class="text-gray-200 hover:text-white nav-link">Home</a>
-                <a href="#about" class="text-gray-200 hover:text-white nav-link">About</a>
-                <a href="#services" class="text-gray-200 hover:text-white nav-link">Services</a>
-                <a href="#process" class="text-gray-200 hover:text-white nav-link">Process</a>
-                <a href="#contact" class="text-gray-200 hover:text-white nav-link">Contact</a>
+                <a href="index.html" class="text-brand-blue font-semibold nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </nav>
-            <a href="#contact" class="hidden md:inline-block btn btn-red text-white font-semibold py-2 px-5 rounded-lg shadow-md">Get a Quote</a>
+            <a href="contact.html" class="hidden md:inline-block btn btn-red text-white font-semibold py-2 px-5 rounded-lg shadow-md">Get a Quote</a>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <main class="pt-20">
-        <!-- Hero Section -->
-        <section id="hero" class="relative min-h-[calc(100vh-80px)] flex items-center justify-center text-center overflow-hidden">
-            <!-- Background Video -->
-            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-                <!-- Replace 'assets/videos/your-hero-video.mp4' with your actual video file -->
-                <source src="assets/videos/your-hero-video.mp4" type="video/mp4">
-                <!-- Poster image for when video is loading or not supported -->
-                <img src="assets/videos/heat-exchanger-process-placeholder.jpg" alt="Video Background Placeholder" class="w-full h-full object-cover">
-                Your browser does not support the video tag.
-            </video>
-            <!-- Overlay for gradient and text readability -->
-            <div class="absolute inset-0 hero-overlay z-10"></div>
+
+        <section id="hero" class="relative min-h-[calc(100vh-80px)] flex items-center justify-center text-center overflow-hidden bg-gray-900">
+            <div class="absolute inset-0 z-0">
+                <img src="https://via.placeholder.com/1920x1080?text=High-Tech+Manufacturing+Facility" alt="Heat Exchanger Manufacturing" class="w-full h-full object-cover opacity-30">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-zinc-900/70 to-transparent z-10"></div>
 
             <div class="container mx-auto px-6 relative z-20">
                 <div class="max-w-4xl mx-auto">
-                    <div class="glass-banner rounded-xl p-4 inline-block mb-4 animate-fade-in-down">
-                        <h2 class="text-2xl md:text-3xl font-bold tracking-widest text-white">20+ Years of Experience</h2>
-                    </div>
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4 animate-fade-in-down delay-200">Narmada Engineering</h1>
-                    <p class="text-xl md:text-3xl font-semibold mb-8 tracking-wide animate-fade-in-up delay-400" style="color: var(--brand-red);">HEAT EXCHANGER EXPERTS</p>
-                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 animate-fade-in-up delay-600">Delivering unparalleled thermal solutions, from custom manufacturing and expert retubing to advanced on-site cleaning services.</p>
-                    <div class="flex justify-center space-x-4 animate-scale-in delay-800">
-                        <a href="#services" class="btn btn-blue text-white font-bold py-3 px-8 rounded-lg shadow-lg text-lg">Our Services</a>
-                        <a href="#contact" class="btn bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg text-lg">Contact Us</a>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">Leading Thermal & Engineering Solutions</h1>
+                    <p class="text-xl md:text-2xl font-light text-gray-300 mb-10">Expert design, manufacturing, and servicing of high-performance heat exchangers for every industry.</p>
+                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="services.html" class="btn btn-primary text-lg px-8 py-3">Explore Our Services</a>
+                        <a href="products.html" class="btn btn-secondary text-lg px-8 py-3 text-white border-white hover:bg-white hover:text-black">View Our Products</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="py-20 bg-zinc-900 animate-fade-in-section">
+        <section id="about" class="py-24 bg-white fade-in-section">
             <div class="container mx-auto px-6">
-                   <div class="text-center mb-16">
-                     <h2 class="text-3xl md:text-4xl font-bold text-white animate-fade-in-up">Your Trusted Partner in Thermal Engineering</h2>
-                     <div class="w-24 h-1.5 mt-4 mx-auto animate-zoom-in" style="background-color: var(--brand-red);"></div>
-                     <p class="text-lg text-gray-400 mt-4 max-w-3xl mx-auto animate-fade-in-up delay-200">For over two decades, Narmada Engineering has been at the forefront of the heat exchanger industry. We specialize in providing robust, efficient, and reliable solutions tailored to meet the unique needs of our clients across various sectors. Our commitment to quality, innovation, and customer satisfaction has made us a leader in the field. We are not just vendors; we are partners in your success.</p>
+                 <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-sm font-semibold uppercase tracking-wider text-brand-blue">About Narmada Engineering</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-6">Your Trusted Partner in Thermal Engineering</h2>
+                        <p class="text-lg text-zinc-700 mb-4">For over two decades, Narmada Engineering has been at the forefront of the heat exchanger industry. We specialize in providing robust, efficient, and reliable solutions tailored to meet the unique needs of our clients.</p>
+                        <p class="text-lg text-zinc-700 mb-8">Our commitment to quality, innovation, and customer satisfaction has made us a leader in the field. We are not just vendors; we are partners in your success.</p>
+                        <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+                    </div>
+                    <div>
+                        [Image of our team or facility]
+                        <img src="https://via.placeholder.com/800x600?text=Our+Engineering+Team+at+Work" alt="Narmada Engineering Team" class="rounded-xl shadow-xl w-full">
+                    </div>
                  </div>
             </div>
         </section>
 
-        <!-- Why Choose Us Section -->
-        <section id="why-us" class="py-20 bg-zinc-800 animate-fade-in-section">
+        <section id="services" class="py-24 bg-slate-50 fade-in-section">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white animate-fade-in-up">Why Choose Narmada Engineering?</h2>
-                    <div class="w-24 h-1.5 mt-4 mx-auto animate-zoom-in" style="background-color: var(--brand-blue);"></div>
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-sm font-semibold uppercase tracking-wider text-brand-red">What We Do</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-4">Our Core Services</h2>
+                    <p class="text-lg text-zinc-700">Comprehensive solutions for all your heat exchanger needs, from creation to maintenance.</p>
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="why-us-card bg-zinc-900 p-8 rounded-xl border border-transparent text-center animate-slide-in-up delay-100">
-                        <i class="fas fa-medal text-4xl mb-4" style="color: var(--brand-blue);"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-white">Unmatched Quality</h3>
-                        <p class="text-gray-400">We adhere to the highest international standards, using premium materials and rigorous testing to ensure every product is built to last.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="service-manufacturing.html" class="block p-8 info-card text-center">
+                        <i class="fas fa-industry text-4xl text-brand-blue mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">Custom Manufacturing</h3>
+                        <p class="text-zinc-600 mb-4">Design and fabrication of custom heat exchangers (Shell & Tube, Plate) engineered to your exact specifications.</p>
+                        <span class="font-semibold text-brand-blue">Learn More &rarr;</span>
+                    </a>
+                    <a href="services.html" class="block p-8 info-card text-center"> <i class="fas fa-sync-alt text-4xl text-brand-blue mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">Expert Retubing</h3>
+                        <p class="text-zinc-600 mb-4">Restore performance and extend equipment life with precision retubing, using high-quality materials for maximum durability.</p>
+                        <span class="font-semibold text-brand-blue">Learn More &rarr;</span>
+                    </a>
+                    <a href="services.html" class="block p-8 info-card text-center"> <i class="fas fa-broom text-4xl text-brand-blue mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">In-Situ Cleaning</h3>
+                        <p class="text-zinc-600 mb-4">Advanced on-site chemical cleaning to remove fouling and scaling, minimizing downtime and boosting thermal efficiency.</p>
+                        <span class="font-semibold text-brand-blue">Learn More &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="py-24 bg-white fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-sm font-semibold uppercase tracking-wider text-brand-red">What We Build</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-4">Our Products</h2>
+                    <p class="text-lg text-zinc-700">We manufacture a wide range of high-efficiency heat exchangers designed for reliability and performance.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="info-card overflow-hidden">
+                        [Image of Shell & Tube Heat Exchanger]
+                        <img src="https://via.placeholder.com/600x400?text=Shell+&+Tube+Exchanger" alt="Shell & Tube Heat Exchanger" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-zinc-900">Shell & Tube Exchangers</h3>
+                            <p class="text-zinc-600 mb-4">The industry standard for reliability. Perfect for oil & gas, chemical processing, and power generation.</p>
+                            <a href="products.html" class="font-semibold text-brand-blue">View Details &rarr;</a>
+                        </div>
                     </div>
-                    <div class="why-us-card bg-zinc-900 p-8 rounded-xl border border-transparent text-center animate-slide-in-up delay-200">
-                        <i class="fas fa-cogs text-4xl mb-4" style="color: var(--brand-blue);"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-white">Advanced Technology</h3>
-                        <p class="text-gray-400">Leveraging the latest in thermal design software and manufacturing techniques to deliver efficient and innovative solutions.</p>
+                    <div class="info-card overflow-hidden">
+                        [Image of Plate Heat Exchanger]
+                        <img src="https://via.placeholder.com/600x400?text=Plate+Heat+Exchanger" alt="Plate Heat Exchanger" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-zinc-900">Plate Heat Exchangers</h3>
+                            <p class="text-zinc-600 mb-4">Compact, high-efficiency solutions ideal for HVAC, food & beverage, and marine applications.</p>
+                            <a href="products.html" class="font-semibold text-brand-blue">View Details &rarr;</a>
+                        </div>
                     </div>
-                    <div class="why-us-card bg-zinc-900 p-8 rounded-xl border border-transparent text-center animate-slide-in-up delay-300">
-                        <i class="fas fa-users text-4xl mb-4" style="color: var(--brand-blue);"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-white">Customer-Centric</h3>
-                        <p class="text-gray-400">Your needs are our priority. We work closely with you from concept to completion to ensure total satisfaction.</p>
+                    <div class="info-card overflow-hidden">
+                        [Image of Finned Tube / Coils]
+                        <img src="https://via.placeholder.com/600x400?text=Finned+Tube+Coils" alt="Finned Tube Coils" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-zinc-900">Finned Tube Coils / Radiators</h3>
+                            <p class="text-zinc-600 mb-4">For air-cooled applications. We manufacture crimped, L-fin, and G-fin tubes for any specification.</p>
+                            <a href="products.html" class="font-semibold text-brand-blue">View Details &rarr;</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-20 bg-zinc-900 animate-fade-in-section">
+        <section id="why-us" class="py-24 bg-slate-50 fade-in-section">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white animate-fade-in-up">Our Core Services</h2>
-                    <p class="text-lg text-gray-400 mt-2 animate-fade-in-up delay-100">Comprehensive solutions for all your heat exchanger needs.</p>
-                    <div class="w-24 h-1.5 mt-4 mx-auto animate-zoom-in" style="background-color: var(--brand-red);"></div>
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-sm font-semibold uppercase tracking-wider text-brand-blue">Our Promise</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-4">Why Choose Narmada Engineering?</h2>
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="service-card bg-zinc-800 p-8 rounded-xl border border-transparent animate-zoom-in delay-200">
-                        <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-full" style="background-color: rgba(0, 82, 204, 0.1);"><i class="fas fa-sync-alt text-3xl" style="color: var(--brand-blue);"></i></div>
-                        <h3 class="text-2xl font-bold mb-3 text-white">Expert Retubing</h3>
-                        <p class="text-gray-400">Restore performance and extend equipment life with precision retubing, using high-quality materials for maximum durability.</p>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <i class="fas fa-medal text-5xl text-brand-red mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">Unmatched Quality</h3>
+                        <p class="text-zinc-600">We adhere to the highest international standards, using premium materials and rigorous testing to ensure every product is built to last.</p>
                     </div>
-                    <div class="service-card bg-zinc-800 p-8 rounded-xl border border-transparent animate-zoom-in delay-300">
-                        <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-full" style="background-color: rgba(217, 37, 37, 0.1);"><i class="fas fa-broom text-3xl" style="color: var(--brand-red);"></i></div>
-                        <h3 class="text-2xl font-bold mb-3 text-white">In-Situ Cleaning</h3>
-                        <p class="text-gray-400">Advanced on-site chemical cleaning to remove fouling and scaling, minimizing downtime and boosting thermal efficiency.</p>
+                    <div class="p-6">
+                        <i class="fas fa-cogs text-5xl text-brand-red mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">Advanced Technology</h3>
+                        <p class="text-zinc-600">Leveraging the latest in thermal design software and manufacturing techniques to deliver efficient and innovative solutions.</p>
                     </div>
-                    <div class="service-card bg-zinc-800 p-8 rounded-xl border border-transparent animate-zoom-in delay-400">
-                        <div class="w-16 h-16 mb-6 flex items-center justify-center rounded-full" style="background-color: rgba(0, 82, 204, 0.1);"><i class="fas fa-industry text-3xl" style="color: var(--brand-blue);"></i></div>
-                        <h3 class="text-2xl font-bold mb-3 text-white">Custom Manufacturing</h3>
-                        <p class="text-gray-400">Design and fabrication of custom heat exchangers (Shell & Tube, Plate Type) engineered to your exact specifications.</p>
+                    <div class="p-6">
+                        <i class="fas fa-users text-5xl text-brand-red mb-6"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">Customer-Centric</h3>
+                        <p class="text-zinc-600">Your needs are our priority. We work closely with you from concept to completion to ensure total satisfaction.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Our Process Section -->
-        <section id="process" class="py-20 bg-zinc-800 animate-fade-in-section">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white animate-fade-in-up">Our Proven Process</h2>
-                    <p class="text-lg text-gray-400 mt-2 animate-fade-in-up delay-100">A systematic approach to guarantee exceptional results every time.</p>
-                    <div class="w-24 h-1.5 mt-4 mx-auto animate-zoom-in" style="background-color: var(--brand-red);"></div>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="process-step bg-zinc-900 p-8 rounded-xl border border-transparent text-center animate-slide-in-up delay-100">
-                        <div class="text-3xl font-bold mb-3" style="color: var(--brand-red);">01</div>
-                        <h3 class="text-xl font-bold mb-2 text-white">Consultation</h3>
-                        <p class="text-gray-400">We start by understanding your specific requirements and operational challenges.</p>
-                    </div>
-                    <div class="process-step bg-zinc-900 p-8 rounded-xl border border-transparent text-center animate-slide-in-up delay-200">
-                        <div class="text-3xl font-bold mb-3" style="color: var(--brand-red);">02</div>
-                        <h3 class="text-xl font-bold mb-2 text-white">Design & Engineering</h3>
-                        <p class="text-gray-400">Our experts create detailed thermal and mechanical designs for approval.</p>
-                    </div>
-                    <div class="process-step bg-zinc-900 p-8 rounded-xl border border-transparent text-center animate-slide-in-up delay-300">
-                        <div class="text-3xl font-bold mb-3" style="color: var(--brand-red);">03</div>
-                        <h3 class="text-xl font-bold mb-2 text-white">Manufacturing</h3>
-                        <p class="text-gray-400">Fabrication begins under strict quality control in our state-of-the-art facility.</p>
-                    </div>
-                    <div class="process-step bg-zinc-900 p-8 rounded-xl border border-transparent text-center animate-slide-in-up delay-400">
-                        <div class="text-3xl font-bold mb-3" style="color: var(--brand-red);">04</div>
-                        <h3 class="text-xl font-bold mb-2 text-white">Delivery & Support</h3>
-                        <p class="text-gray-400">Timely delivery followed by comprehensive after-sales support and service.</p>
-                    </div>
-                </div>
+        <section class="py-24 bg-brand-blue text-white fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Discuss Your Next Project?</h2>
+                <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">Let our experts design the perfect thermal solution for your needs. Contact us today for a free consultation and quote.</p>
+                <a href="contact.html" class="btn btn-red text-lg px-8 py-3">Get a Free Quote</a>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-zinc-900 animate-fade-in-section">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white animate-fade-in-up">Get In Touch</h2>
-                    <p class="text-lg text-gray-400 mt-2 animate-fade-in-up delay-100">We're ready to discuss your next project. Reach out today!</p>
-                    <div class="w-24 h-1.5 mt-4 mx-auto animate-zoom-in" style="background-color: var(--brand-blue);"></div>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-12">
-                    <div class="bg-zinc-800 p-8 md:p-12 rounded-xl shadow-2xl animate-slide-in-left">
-                        <form id="contact-form">
-                            <h3 class="text-2xl font-bold mb-6 text-white">Send Us a Message</h3>
-                            <div class="grid md:grid-cols-2 gap-6 mb-6">
-                                <input type="text" id="name" placeholder="Your Name" class="w-full bg-zinc-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                <input type="email" id="email" placeholder="Your Email" class="w-full bg-zinc-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                            </div>
-                            <div class="mb-6"><input type="text" id="subject" placeholder="Subject" class="w-full bg-zinc-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></div>
-                            <div class="mb-6"><textarea id="message" placeholder="Describe your requirements..." rows="5" class="w-full bg-zinc-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea></div>
-                            <div class="mb-6 text-center">
-                                <button type="button" id="analyze-button" class="btn bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg text-lg w-full md:w-auto">✨ Analyze My Request</button>
-                            </div>
-                            <div id="gemini-result" class="hidden mb-6 p-6 bg-zinc-700/50 border border-zinc-600 rounded-lg text-gray-300"></div>
-                            <div class="text-center"><button type="submit" class="btn btn-blue text-white font-bold py-3 px-10 rounded-lg shadow-lg text-lg w-full md:w-auto">Send Message</button></div>
-                        </form>
-                    </div>
-                    <div class="flex flex-col justify-between animate-slide-in-right">
-                            <div>
-                                <h3 class="text-2xl font-bold mb-6 text-white">Contact Information</h3>
-                                <div class="space-y-6 text-lg">
-                                    <div class="flex items-start space-x-4">
-                                        <i class="fas fa-map-marker-alt mt-1 text-2xl contact-icon"></i>
-                                        <div>
-                                            <h4 class="font-bold text-white">Our Office</h4>
-                                            <p class="text-gray-400">581, Amrai Katara hills Road, Baghsewania <br>Bhopal, Madhya Pradesh, 462043, India</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start space-x-4">
-                                        <i class="fas fa-envelope mt-1 text-2xl contact-icon"></i>
-                                        <div>
-                                            <h4 class="font-bold text-white">Email Us</h4>
-                                            <p class="text-gray-400">narmada.engbpl@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start space-x-4">
-                                        <i class="fas fa-phone mt-1 text-2xl contact-icon"></i>
-                                        <div>
-                                            <h4 class="font-bold text-white">Call Us</h4>
-                                            <p class="text-gray-400">+91-82696-44912</p>
-                                        </div>
-                                    </div>
-                                     <div class="flex items-start space-x-4">
-                                        <i class="fas fa-clock mt-1 text-2xl contact-icon"></i>
-                                        <div>
-                                            <h4 class="font-bold text-white">Business Hours</h4>
-                                            <p class="text-gray-400">Monday - Saturday: 9:00 AM - 6:00 PM</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-8">
-                                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.195027419163!2d77.46830581541093!3d23.23597381488126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43daaaaaaaab%3A0x1c8b721e782b5a51!2sGovindpura%20Industrial%20Area%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1678286950121!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="bg-black py-8">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <a href="#hero" class="flex items-center justify-center space-x-3 mb-4">
-                <!-- Image source path updated for footer logo -->
-                <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-10 w-16">
-                <span class="text-xl font-bold text-white">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
-            </a>
-            <p class="mb-2">Heat Exchanger Experts</p>
-            <p class="text-sm">&copy; <span id="current-year"></span> Narmada Engineering. All Rights Reserved.</p>
+    <footer class="bg-zinc-900 text-gray-300 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-10 w-16">
+                        <span class="text-xl font-bold text-white">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
+                    </a>
+                    <p class="text-gray-400">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="service-manufacturing.html" class="text-gray-400 hover:text-white">Custom Manufacturing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Expert Retubing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">On-Site Cleaning</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Repair & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-brand-blue"></i>
+                            <span>581, Amrai Katara hills Road, Baghsewania, Bhopal, MP, 462043</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-phone mt-1 text-brand-blue"></i>
+                            <span>+91-82696-44912</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-envelope mt-1 text-brand-blue"></i>
+                            <span>narmada.engbpl@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-gray-500">
+                <p>© <span id="current-year"></span> Narmada Engineering. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-brand-red text-white p-4 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 z-40 hidden">
-        <i class="fas fa-arrow-up text-xl"></i>
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-brand-red text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 z-40 hidden">
+        <i class="fas fa-arrow-up text-lg"></i>
     </button>
 
     <script src="js/script.js"></script>
