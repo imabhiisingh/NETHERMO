@@ -1,107 +1,125 @@
+/*
+    NEW PROFESSIONAL STYLESHEET for Narmada Engineering
+*/
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #0a0a0a; /* Dark background for overall modern feel */
-    color: #e5e7eb; /* Light gray text for contrast on dark background */
+    background-color: #ffffff; /* Clean white background */
+    color: #18181b; /* Dark text (zinc-900) for readability */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom CSS Variables for Brand Colors */
+/* --- Brand Colors --- */
 :root {
-    --brand-red: #d92525; /* A strong red from your logo */
-    --brand-blue: #0052cc; /* A vibrant blue from your logo */
-    --dark-bg: #0a0a0a;
-    --darker-zinc: #18181b; /* Equivalent to bg-zinc-900 */
-    --dark-zinc: #27272a; /* Equivalent to bg-zinc-800 */
-    --light-text: #e5e7eb; /* Equivalent to text-gray-200 */
-    --medium-text: #a1a1aa; /* Equivalent to text-gray-400 */
+    --brand-red: #d92525;
+    --brand-blue: #0052cc;
+    --light-bg: #ffffff;
+    --light-card: #f9fafb; /* Very light gray (gray-50) */
+    --dark-text: #18181b;  /* zinc-900 */
+    --medium-text: #52525b; /* zinc-600 */
 }
 
-/* Hero Section Video & Overlay */
-#hero {
-    position: relative; /* Needed for video positioning */
+/* --- Header --- */
+#home-header {
+    transition: all 0.3s ease-in-out;
+}
+#home-header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    backdrop-filter: blur(8px);
 }
 
-#hero video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures video covers the entire area */
-    z-index: 0; /* Behind the overlay and content */
-}
-
-.hero-overlay {
-    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 82, 204, 0.2) 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Above the video */
-}
-
-
-/* Navigation Link Hover Effect */
+/* --- Navigation Link Hover --- */
 .nav-link {
     position: relative;
     transition: color 0.3s ease;
+    color: #3f3f46; /* zinc-700 */
+}
+.nav-link:hover {
+    color: var(--brand-blue);
 }
 .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--brand-red);
+    bottom: -6px;
+    left: 0;
+    background-color: var(--brand-blue);
     transition: width 0.3s ease;
 }
 .nav-link:hover::after {
     width: 100%;
 }
 
-/* Card Hover Effects for Services, Process, Why Us */
-.service-card, .process-step, .why-us-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border: 1px solid var(--dark-zinc); /* Subtle border for definition */
-}
-.service-card:hover, .process-step:hover, .why-us-card:hover {
-    transform: translateY(-8px); /* Lift effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
-    border-color: var(--brand-blue); /* Highlight border on hover */
-}
-
-/* Glassmorphism Effect for Banner */
-.glass-banner {
-    background: rgba(255, 255, 255, 0.05); /* Semi-transparent white */
-    backdrop-filter: blur(10px); /* Blur effect */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-}
-
-/* Button Styles */
+/* --- Button Styles --- */
 .btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
     transition: all 0.3s ease-in-out;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+.btn-primary {
+    background-color: var(--brand-blue);
+    color: white;
+    box-shadow: 0 4px 14px rgba(0, 82, 204, 0.25);
+}
+.btn-primary:hover {
+    background-color: #0041a3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 82, 204, 0.3);
 }
 .btn-red {
     background-color: var(--brand-red);
+    color: white;
+    box-shadow: 0 4px 14px rgba(217, 37, 37, 0.25);
 }
 .btn-red:hover {
-    background-color: #b91c1c; /* Slightly darker red on hover */
-    transform: translateY(-2px); /* Slight lift */
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(217, 37, 37, 0.3);
 }
-.btn-blue {
+.btn-secondary {
+    background-color: transparent;
+    color: var(--brand-blue);
+    border: 2px solid var(--brand-blue);
+}
+.btn-secondary:hover {
     background-color: var(--brand-blue);
-}
-.btn-blue:hover {
-    background-color: #003d99; /* Slightly darker blue on hover */
-    transform: translateY(-2px); /* Slight lift */
+    color: white;
+    transform: translateY(-2px);
 }
 
-/* Loader for AI analysis */
+/* --- Card Hover Effect --- */
+.info-card {
+    background-color: var(--light-card);
+    border: 1px solid #e5e7eb; /* gray-200 */
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* --- Section Fade-in Animation --- */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Loader for Form (if you add it back) --- */
 .loader {
-    border: 4px solid #f3f3f3; /* Light grey */
-    border-top: 4px solid var(--brand-blue); /* Blue */
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--brand-blue);
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -110,116 +128,4 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-/* Contact Section Icon Color */
-.contact-icon {
-    color: var(--brand-red); /* Use brand red for contact icons */
-}
-
-/* Specific background colors for sections to break monotony */
-#why-us {
-    background-color: #111111; /* Slightly lighter dark background */
-}
-#process {
-    background-color: #111111; /* Consistent with why-us */
-}
-
-/* Header scroll state */
-#home-header.scrolled {
-    background-color: rgba(0, 0, 0, 0.95); /* Even darker, more opaque black */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Stronger shadow */
-}
-
-/* Animations */
-@keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes scaleIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes zoomIn {
-    from { opacity: 0; transform: scale(0.8); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes slideInLeft {
-    from { opacity: 0; transform: translateX(-50px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes slideInRight {
-    from { opacity: 0; transform: translateX(50px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
-/* Apply animations with delays */
-.animate-fade-in-down {
-    animation: fadeInDown 0.8s ease-out forwards;
-    opacity: 0; /* Start hidden */
-}
-.animate-fade-in-up {
-    animation: fadeInUp 0.8s ease-out forwards;
-    opacity: 0;
-}
-.animate-scale-in {
-    animation: scaleIn 0.8s ease-out forwards;
-    opacity: 0;
-}
-.animate-zoom-in {
-    animation: zoomIn 0.8s ease-out forwards;
-    opacity: 0;
-}
-.animate-slide-in-left {
-    animation: slideInLeft 0.7s ease-out forwards;
-    opacity: 0;
-}
-.animate-slide-in-right {
-    animation: slideInRight 0.7s ease-out forwards;
-    opacity: 0;
-}
-
-/* Delay utility classes */
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-500 { animation-delay: 0.5s; }
-.delay-600 { animation-delay: 0.6s; }
-.delay-700 { animation-delay: 0.7s; }
-.delay-800 { animation-delay: 0.8s; }
-
-
-/* Intersection Observer controlled animations */
-/* These elements start invisible and animate into view when scrolled to */
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-}
-
-.animate-on-scroll.in-view {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Specific section entrance animation */
-.animate-fade-in-section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.animate-fade-in-section.in-view {
-    opacity: 1;
-    transform: translateY(0);
 }
