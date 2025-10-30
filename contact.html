@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Narmada Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-zinc-900">
+
+    <header id="home-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-12 w-20">
+                <span class="text-xl md:text-2xl font-bold text-zinc-900 tracking-wider">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="contact.html" class="text-brand-blue font-semibold nav-link">Contact</a>
+            </nav>
+            <a href="contact.html" class="hidden md:inline-block btn btn-red text-white font-semibold py-2 px-5 rounded-lg shadow-md">Get a Quote</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <section class="py-24 bg-slate-50 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-900 mb-4">Get In Touch</h1>
+                <p class="text-lg md:text-xl text-zinc-700 max-w-3xl mx-auto">We're ready to discuss your next project. Reach out today!</p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    
+                    <div class="bg-slate-50 p-8 md:p-12 rounded-xl shadow-lg border border-gray-200">
+                        <form id="contact-form">
+                            <h3 class="text-3xl font-bold mb-8 text-zinc-900">Send Us a Message</h3>
+                            
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-semibold text-zinc-700 mb-2">Your Name</label>
+                                    <input type="text" id="name" placeholder="John Doe" class="w-full bg-white text-zinc-900 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-blue" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-zinc-700 mb-2">Your Email</label>
+                                    <input type="email" id="email" placeholder="john@example.com" class="w-full bg-white text-zinc-900 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-blue" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm font-semibold text-zinc-700 mb-2">Subject</label>
+                                <input type="text" id="subject" placeholder="e.g., Quote for Shell & Tube Exchanger" class="w-full bg-white text-zinc-900 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-blue" required>
+                            </div>
+                            
+                            <div class="mb-8">
+                                <label for="message" class="block text-sm font-semibold text-zinc-700 mb-2">Describe your requirements</label>
+                                <textarea id="message" placeholder="Please provide details about your project, operating parameters, materials, etc..." rows="6" class="w-full bg-white text-zinc-900 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-blue" required></textarea>
+                            </div>
+
+                            <div class="text-left">
+                                <button type="submit" class="btn btn-primary text-lg py-3 px-10">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-3xl font-bold mb-8 text-zinc-900">Contact Information</h3>
+                                <div class="space-y-6 text-lg">
+                                    <div class="flex items-start space-x-4">
+                                        <i class="fas fa-map-marker-alt mt-1 text-3xl text-brand-red"></i>
+                                        <div>
+                                            <h4 class="font-bold text-zinc-900">Our Office</h4>
+                                            <p class="text-zinc-700">581, Amrai Katara hills Road, Baghsewania <br>Bhopal, Madhya Pradesh, 462043, India</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <i class="fas fa-envelope mt-1 text-3xl text-brand-red"></i>
+                                        <div>
+                                            <h4 class="font-bold text-zinc-900">Email Us</h4>
+                                            <p class="text-zinc-700">narmada.engbpl@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <i class="fas fa-phone mt-1 text-3xl text-brand-red"></i>
+                                        <div>
+                                            <h4 class="font-bold text-zinc-900">Call Us</h4>
+                                            <p class="text-zinc-700">+91-82696-44912</p>
+                                        </div>
+                                    </div>
+                                     <div class="flex items-start space-x-4">
+                                        <i class="fas fa-clock mt-1 text-3xl text-brand-red"></i>
+                                        <div>
+                                            <h4 class="font-bold text-zinc-900">Business Hours</h4>
+                                            <p class="text-zinc-700">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fade-in-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.195027419163!2d77.46830581541093!3d23.23597381488126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43daaaaaaaab%3A0x1c8b721e782b5a51!2sGovindpura%20Industrial%20Area%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1678286950121!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-Freferrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="bg-zinc-900 text-gray-300 py-16">
+        <div class="container mx-auto px-6">
+             <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-10 w-16">
+                        <span class="text-xl font-bold text-white">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
+                    </a>
+                    <p class="text-gray-400">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="service-manufacturing.html" class="text-gray-400 hover:text-white">Custom Manufacturing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Expert Retubing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">On-Site Cleaning</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Repair & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-brand-blue"></i>
+                            <span>581, Amrai Katara hills Road, Baghsewania, Bhopal, MP, 462043</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-phone mt-1 text-brand-blue"></i>
+                            <span>+91-82696-44912</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-envelope mt-1 text-brand-blue"></i>
+                            <span>narmada.engbpl@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-gray-500">
+                <p>© <span id="current-year"></span> Narmada Engineering. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
