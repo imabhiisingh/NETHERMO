@@ -57,12 +57,16 @@ mobileMenu.classList.toggle('hidden');
 });
 }
 
-// --- NEW AUTOMATIC HERO SLIDER ---
+// --- NEW AUTOMATIC HERO SLIDER (WITH BUTTONS) ---
 document.addEventListener('DOMContentLoaded', () => {
     const sliderContainer = document.getElementById('hero-slider-container');
     if (sliderContainer) {
         const slides = document.querySelectorAll('.hero-slide');
         const dots = document.querySelectorAll('.slider-dot');
+        // --- बटन को जोड़ा गया ---
+        const nextBtn = document.getElementById('next-slide');
+        const prevBtn = document.getElementById('prev-slide');
+        // ---
         let currentSlide = 0;
         let slideInterval;
 
@@ -102,11 +106,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextSlide = () => {
             showSlide(currentSlide + 1);
         };
+        
+        // --- पिछला स्लाइड फ़ंक्शन जोड़ा गया ---
+        const prevSlide = () => {
+            showSlide(currentSlide - 1);
+        };
+        // ---
 
         const resetInterval = () => {
             clearInterval(slideInterval);
             slideInterval = setInterval(nextSlide, 5000); // 5 सेकंड
         };
+
+        // --- बटन क्लिक लिस्नर जोड़े गए ---
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetInterval();
+            });
+        }
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetInterval();
+            });
+        }
+        // ---
 
         // डॉट्स पर क्लिक इवेंट्स
         dots.forEach((dot) => {
