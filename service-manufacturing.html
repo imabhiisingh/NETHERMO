@@ -15,18 +15,35 @@
 
     <header id="home-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3">
-                <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-12 w-20">
-                <span class="text-xl md:text-2xl font-bold text-zinc-900 tracking-wider">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
+            
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering - Heat Exchanger Expert" class="h-12 w-auto">
             </a>
+
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
-                <a href="services.html" class="text-brand-blue font-semibold nav-link">Services</a>
+                <a href="services.html" class="nav-link">Services</a>
                 <a href="products.html" class="nav-link">Products</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
+
             <a href="contact.html" class="hidden md:inline-block btn btn-red text-white font-semibold py-2 px-5 rounded-lg shadow-md">Get a Quote</a>
+
+            <button id="mobile-menu-button" class="md:hidden text-3xl text-zinc-800">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <nav class="flex flex-col p-4 space-y-3">
+                <a href="index.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">About Us</a>
+                <a href="services.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Services</a>
+                <a href="products.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Products</a>
+                <a href="contact.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Contact</a>
+                <a href="contact.html" class="btn btn-red text-white text-center mt-2">Get a Quote</a>
+            </nav>
         </div>
     </header>
 
@@ -47,8 +64,7 @@
                     <div class="lg:col-span-2 text-lg text-zinc-700 space-y-6">
                         <p>At Narmada Engineering, we don't just supply heat exchangers; we engineer solutions. Our custom manufacturing service is built on a foundation of deep technical expertise and a state-of-the-art fabrication facility.</p>
                         
-                        
-                        <img src="https://via.placeholder.com/1000x600?text=Detailed+CAD+Design" alt="CAD Design" class="rounded-lg shadow-md my-6">
+                        <img src="assets/images/cad-design.jpg" alt="3D CAD model of a heat exchanger" class="rounded-lg shadow-md my-6">
 
                         <h3 class="text-2xl font-bold text-zinc-900 pt-4">Our Proven Process</h3>
                         <p>We follow a rigorous, step-by-step process to ensure quality and precision from start to finish:</p>
@@ -73,36 +89,33 @@
                     </div>
 
                     <aside class="space-y-8">
-                        
-                        <img src="https://via.placeholder.com/600x400?text=Finished+Custom+Exchanger" alt="Custom Exchanger" class="rounded-lg shadow-md">
+                        <img src="assets/images/finished-exchanger.jpg" alt="A large, newly finished custom heat exchanger" class="rounded-lg shadow-md">
                         
                         <div class="bg-slate-50 p-6 rounded-lg border border-gray-200">
                             <h4 class="text-xl font-bold text-zinc-900 mb-4">Other Services</h4>
                             <nav class="space-y-3">
-                                <a href="#" class="block p-4 bg-white rounded-lg border border-gray-200 hover:border-brand-blue hover:shadow-md transition-all">
-                                    <h5 class="font-semibold text-brand-blue">Expert Retubing</h5>
+                                <a href="services.html" class="block p-4 bg-white rounded-lg border border-gray-200 hover:border-brand-blue hover:shadow-md transition-all">
+                                    <h5 class="font-semibold text-brand-blue">Restoration & Repair</h5>
                                     <p class="text-sm text-zinc-600">Restore the life of your existing units.</p>
                                 </a>
-                                <a href="#" class="block p-4 bg-white rounded-lg border border-gray-200 hover:border-brand-blue hover:shadow-md transition-all">
-                                    <h5 class="font-semibold text-brand-blue">In-Situ Cleaning</h5>
-                                    <p class="text-sm text-zinc-600">Boost efficiency with on-site cleaning.</p>
-                                a>
+                                <a href="products.html" class="block p-4 bg-white rounded-lg border border-gray-200 hover:border-brand-blue hover:shadow-md transition-all">
+                                    <h5 class="font-semibold text-brand-blue">Product Supply</h5>
+                                    <p class="text-sm text-zinc-600">Get tubes, spares, and components.</p>
+                                </a>
                             </nav>
                         </div>
                     </aside>
-
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-brand-blue text-white fade-in-section">
+        <section class="py-24 bg-slate-50 fade-in-section">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-4">Get a Quote for Your Custom Project</h2>
+                <h2 class="text-3xl font-bold text-zinc-900 mb-4">Get a Quote for Your Custom Project</h2>
                 <p class="text-lg text-zinc-700 max-w-2xl mx-auto mb-8">Provide us with your specifications, and our engineering team will get back to you with a detailed proposal and quote.</p>
-                <a href="contact.html" class="btn btn-red text-lg px-8 py-3">Request a Quote</a>
+                <a href="contact.html" class="btn btn-primary text-lg px-8 py-3">Request a Quote</a>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-zinc-900 text-gray-300 py-16">
@@ -110,8 +123,7 @@
              <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="flex items-center space-x-3 mb-4">
-                        <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-10 w-16">
-                        <span class="text-xl font-bold text-white">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
+                        <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering" class="h-10 w-auto opacity-80">
                     </a>
                     <p class="text-gray-400">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
                 </div>
@@ -119,9 +131,9 @@
                     <h4 class="text-lg font-semibold text-white mb-4">Our Services</h4>
                     <ul class="space-y-2">
                         <li><a href="service-manufacturing.html" class="text-gray-400 hover:text-white">Custom Manufacturing</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Expert Retubing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Restoration & Repair</a></li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">On-Site Cleaning</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Repair & Maintenance</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">NDT Testing</a></li>
                     </ul>
                 </div>
                 <div>

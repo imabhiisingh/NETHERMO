@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products | Narmada Engineering</title>
+    <title>Product Supply & Spares | Narmada Engineering</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +15,8 @@
 
     <header id="home-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3">
-                <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-12 w-20">
-                <span class="text-xl md:text-2xl font-bold text-zinc-900 tracking-wider">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering - Heat Exchanger Expert" class="h-12 w-auto">
             </a>
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="index.html" class="nav-link">Home</a>
@@ -27,6 +26,19 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             <a href="contact.html" class="hidden md:inline-block btn btn-red text-white font-semibold py-2 px-5 rounded-lg shadow-md">Get a Quote</a>
+            <button id="mobile-menu-button" class="md:hidden text-3xl text-zinc-800">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <nav class="flex flex-col p-4 space-y-3">
+                <a href="index.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">About Us</a>
+                <a href="services.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Services</a>
+                <a href="products.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Products</a>
+                <a href="contact.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Contact</a>
+                <a href="contact.html" class="btn btn-red text-white text-center mt-2">Get a Quote</a>
+            </nav>
         </div>
     </header>
 
@@ -34,85 +46,78 @@
 
         <section class="py-24 bg-slate-50 text-center">
             <div class="container mx-auto px-6">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-900 mb-4">Our Products & Spares</h1>
-                <p class="text-lg md:text-xl text-zinc-700 max-w-3xl mx-auto">High-performance solutions and support equipment, engineered for reliability and efficiency.</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-900 mb-4">Our Product Supply</h1>
+                <p class="text-lg md:text-xl text-zinc-700 max-w-3xl mx-auto">Your reliable source for high-quality components and spare parts to build, repair, and maintain your heat exchangers.</p>
             </div>
         </section>
 
         <section class="py-24 fade-in-section">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    
-                    <div class="info-card overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400?text=Shell+&+Tube+Exchanger" alt="Shell & Tube Exchanger" class="w-full h-56 object-cover">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold mb-3 text-zinc-900">Shell & Tube Heat Exchangers</h3>
-                            <p class="text-zinc-600 mb-4">The workhorse of the industry. We build to all TEMA types (BEM, AEL, etc.) for high-pressure and high-temperature applications.</p>
-                            <h4 class="font-semibold text-zinc-800 mb-2">Key Materials:</h4>
-                            <ul class="text-sm text-zinc-600 list-disc list-inside">
-                                <li>Carbon Steel (CS)</li>
-                                <li>Stainless Steel (SS 304, 316)</li>
-                                <li>Admiralty Brass, Copper-Nickel</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="container mx-auto px-6 space-y-20">
 
-                    <div class="info-card overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400?text=Finned+Tube+Coils" alt="Finned Tube Coils" class="w-full h-56 object-cover">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold mb-3 text-zinc-900">Finned Tube Coils (Radiators)</h3>
-                            <p class="text-zinc-600 mb-4">Custom-built air-cooled heat exchangers. We manufacture our own crimped, 'L', and 'G' type fins for superior bonding.</p>
-                            <h4 class="font-semibold text-zinc-800 mb-2">Fin Types:</h4>
-                            <ul class="text-sm text-zinc-600 list-disc list-inside">
-                                <li>Crimped Fin</li>
-                                <li>L-Fin (Wrap-On)</li>
-                                <li>G-Fin (Embedded)</li>
-                            </ul>
-                        </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="assets/images/tube-supply.jpg" alt="Stacks of high-quality heat exchanger tubes" class="rounded-xl shadow-xl w-full">
                     </div>
+                    <div>
+                        <div class="flex items-center space-x-3 mb-3">
+                            <i class="fas fa-layer-group text-3xl text-brand-blue"></i>
+                            <h2 class="text-3xl font-bold text-zinc-900">High-Quality Tube Supply</h2>
+                        </div>
+                        <p class="text-lg text-zinc-700 mb-6">We maintain a robust inventory and supply chain for all standard and exotic material tubes required for heat exchanger fabrication and repair.</p>
+                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside">
+                            <li>**Stainless Steel:** SS 304/304L, SS 316/316L</li>
+                            <li>**Copper Alloys:** Admiralty Brass (Ad-Brass), Aluminium Brass</li>
+                            <li>**Cupro-Nickel (Cu-Ni):** 90/10 and 70/30 alloys</li>
+                        </ul>
+                    </div>
+                </div>
 
-                    <div class="info-card overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400?text=Heat+Exchanger+Spare+Parts" alt="Heat Exchanger Spare Parts" class="w-full h-56 object-cover">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold mb-3 text-zinc-900">Spare Parts</h3>
-                            <p class="text-zinc-600 mb-4">Keep your operations running with our full inventory of OEM-quality spare parts for all types of heat exchangers.</p>
-                            <h4 class="font-semibold text-zinc-800 mb-2">Parts Available:</h4>
-                            <ul class="text-sm text-zinc-600 list-disc list-inside">
-                                <li>Gaskets (All materials)</li>
-                                <li>Individual Tubes (All sizes/materials)</li>
-                                <li>Tube Bundles & Tie Rods</li>
-                                <li>End Covers & Bonnets</li>
-                            </ul>
-                        </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-last">
+                        <img src="assets/images/finned-tube-coils.jpg" alt="Crimped finned tubes for air coolers" class="rounded-xl shadow-xl w-full">
                     </div>
-                    
-                    <div class="info-card overflow-hidden">
-                        <img src="https://via.placeholder.com/600x400?text=Tube+Cleaning+Equipment" alt="Heat Exchanger Cleaning Equipment" class="w-full h-56 object-cover">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold mb-3 text-zinc-900">Cleaning Equipments</h3>
-                            <p class="text-zinc-600 mb-4">We supply professional-grade equipment for in-house maintenance, helping you keep your units at peak efficiency.</p>
-                            <h4 class="font-semibold text-zinc-800 mb-2">Equipment Types:</h4>
-                            <ul class="text-sm text-zinc-600 list-disc list-inside">
-                                <li>High-Pressure Water Jets</li>
-                                <li>Automatic Tube Cleaners</li>
-                                <li>Descaling Pumps & Chemicals</li>
-                                <li>Tube Brushes & Drill Sets</li>
-                            </ul>
+                    <div class="md:order-first">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <i class="fas fa-fan text-3xl text-brand-blue"></i>
+                            <h2 class="text-3xl font-bold text-zinc-900">Enhanced Finned Tube Supply</h2>
                         </div>
+                        <p class="text-lg text-zinc-700 mb-6">For applications requiring improved thermal efficiency, such as air-coolers and radiators, we supply a complete range of enhanced heat transfer tubes.</p>
+                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside">
+                            <li>Crimped Fin Tubes</li>
+                            <li>Wire Wound Fin Tubes</li>
+                            <li>Extruded Aluminium Fin Tubes</li>
+                        </ul>
                     </div>
+                </div>
 
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="assets/images/spare-parts.jpg" alt="Gaskets, baffles, and other heat exchanger spare parts" class="rounded-xl shadow-xl w-full">
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-3 mb-3">
+                            <i class="fas fa-cogs text-3xl text-brand-blue"></i>
+                            <h2 class="text-3xl font-bold text-zinc-900">Complete Spare Parts Inventory</h2>
+                        </div>
+                        <p class="text-lg text-zinc-700 mb-6">We are your one-stop source for all spare parts and fabricated components used in shell and tube heat exchangers.</p>
+                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside">
+                            <li>Gaskets (Spiral Wound, Jacketed)</li>
+                            <li>Custom Fabricated Parts (Tube Sheets, Baffles)</li>
+                            <li>Instrumentation (Pressure & Temperature Gauges)</li>
+                            <li>Hardware (Flanges, Fasteners, Studs, Nuts)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-brand-blue text-white fade-in-section">
+        <section class="py-24 bg-slate-50 fade-in-section">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-4">Have a Specific Requirement?</h2>
-                <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">We can build it or stock it. Our engineering team loves a challenge. Contact us with your technical specifications to start the conversation.</p>
-                <a href="contact.html" class="btn btn-red text-lg px-8 py-3">Submit Your Specifications</a>
+                <h2 class="text-3xl font-bold text-zinc-900 mb-4">Need a Specific Part?</h2>
+                <p class="text-lg text-zinc-700 max-w-2xl mx-auto mb-8">Our team can source or fabricate any component you need. Contact us with your specifications for a fast, competitive quote.</p>
+                <a href="contact.html" class="btn btn-primary text-lg px-8 py-3">Submit Your Inquiry</a>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-zinc-900 text-gray-300 py-16">
@@ -120,8 +125,7 @@
              <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <a href="index.html" class="flex items-center space-x-3 mb-4">
-                        <img src="assets/images/Narmada-enggLogo png final copy.png" alt="Narmada Engineering Logo" class="h-10 w-16">
-                        <span class="text-xl font-bold text-white">Narmada <span style="color: var(--brand-blue);">Engineering</span></span>
+                        <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering" class="h-10 w-auto opacity-80">
                     </a>
                     <p class="text-gray-400">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
                 </div>
@@ -129,9 +133,9 @@
                     <h4 class="text-lg font-semibold text-white mb-4">Our Services</h4>
                     <ul class="space-y-2">
                         <li><a href="service-manufacturing.html" class="text-gray-400 hover:text-white">Custom Manufacturing</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Expert Retubing</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Restoration & Repair</a></li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">On-Site Cleaning</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Repair & Maintenance</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">NDT Testing</a></li>
                     </ul>
                 </div>
                 <div>
@@ -139,7 +143,7 @@
                     <ul class="space-y-2">
                         <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
                         <li><a href="products.html" class="text-gray-400 hover:text-white">Products</a></li>
-                        <li><a href="contact..html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
                     </ul>
                 </div>
@@ -166,6 +170,10 @@
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-brand-red text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 z-40 hidden">
+        <i class="fas fa-arrow-up text-lg"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
