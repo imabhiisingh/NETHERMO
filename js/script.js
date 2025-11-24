@@ -1,6 +1,15 @@
 // Function to handle the auto-slide and navigation logic
 function initHeroSlider() {
     const slides = document.querySelectorAll('.hero-slide');
+    // Ensure the dots container only has buttons for the active slides (3 slides now)
+    const dotsContainer = document.querySelector('.slider-dots');
+    if (dotsContainer) {
+        // Only keep the first three dots, remove the fourth one if it exists from old code
+        while (dotsContainer.children.length > slides.length) {
+            dotsContainer.removeChild(dotsContainer.lastChild);
+        }
+    }
+    
     const dots = document.querySelectorAll('.slider-dot');
     const prevButton = document.getElementById('prev-slide');
     const nextButton = document.getElementById('next-slide');
@@ -24,6 +33,7 @@ function initHeroSlider() {
             dot.classList.remove('bg-white', 'w-8');
             dot.classList.add('bg-white/50', 'w-3');
             if (i === index) {
+                // Active dot style: solid white and wider
                 dot.classList.remove('bg-white/50', 'w-3');
                 dot.classList.add('bg-white', 'w-8');
             }
