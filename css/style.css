@@ -90,6 +90,6 @@
     /* Targets screens smaller than the Tailwind 'sm' breakpoint */
     #hero {
         /* Sets the height to 75% of the viewport height on mobile devices */
-        height: 55vh !important; 
+        height: 40vh !important; 
     }
 }
