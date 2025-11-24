@@ -1,271 +1,78 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narmada Engineering - Leading Heat Exchanger Solutions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bg-white text-zinc-900">
+<section id="hero" class="relative h-[calc(100vh-80px)] overflow-hidden bg-gray-900">
+    <div id="hero-slider-container" class="relative h-full">
 
-    <header id="home-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            
-            <a href="index.html" class="flex items-center">
-                <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering - Heat Exchanger Expert" class="h-12 w-auto">
-            </a>
-
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="index.html" class="text-brand-blue font-semibold nav-link">Home</a>
-                <a href="about.html" class="nav-link">About Us</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="products.html" class="nav-link">Products</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </nav>
-
-            <a href="contact.html" class="hidden md:inline-block btn btn-red text-white font-semibold py-2 px-5 rounded-lg shadow-md">Get a Quote</a>
-
-            <button id="mobile-menu-button" class="md:hidden text-3xl text-zinc-800">
-                <i class="fas fa-bars"></i>
-            </button>
+        <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0">
+            <img src="assets/images/retubing-service.jpg" alt="Precision Heat Exchanger Retubing" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="container mx-auto px-6 relative z-20 h-full flex flex-col justify-center text-left">
+                <div class="max-w-4xl">
+                    <span class="text-lg md:text-xl font-semibold text-brand-red mb-3 uppercase tracking-widest">Restore & Optimize</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-snug mb-5">
+                        Guaranteed Heat Exchanger <br class="hidden lg:inline"> **Restoration**
+                    </h1>
+                    <p class="text-xl md:text-2xl font-light text-gray-300 mb-10 max-w-2xl">
+                        Expert retubing, repair, and cleaning services to bring your unit back to peak performance.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="services.html" class="btn btn-red text-lg px-8 py-4 w-full sm:w-auto">Explore Services</a>
+                        <a href="contact.html" class="btn border border-white text-white text-lg px-8 py-4 w-full sm:w-auto hover:bg-white hover:text-zinc-900 transition-colors">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
-            <nav class="flex flex-col p-4 space-y-3">
-                <a href="index.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Home</a>
-                <a href="about.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">About Us</a>
-                <a href="services.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Services</a>
-                <a href="products.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Products</a>
-                <a href="contact.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Contact</a>
-                <a href="contact.html" class="btn btn-red text-white text-center mt-2">Get a Quote</a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="pt-20">
-
-        <section id="hero" class="relative h-[calc(100vh-80px)] overflow-hidden bg-gray-900">
-            <div id="hero-slider-container" class="relative h-full">
-
-                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
-                    <img src="assets/images/retubing-service.jpg" alt="Precision Retubing" class="w-full h-full object-cover opacity-50">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent/30"></div>
-                    <div class="container mx-auto px-6 relative z-20 h-full flex flex-col justify-center text-center">
-                        <div class="max-w-4xl mx-auto">
-                            <span class="block text-xl md:text-2xl font-semibold text-brand-red mb-4 uppercase">Restoration & Repair</span>
-                            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">Precision Retubing</h1>
-                            <p class="text-xl md:text-2xl font-light text-gray-300 mb-10">We bring unparalleled expertise to your facility, ensuring minimal downtime.</p>
-                            <a href="services.html" class="btn btn-red text-lg px-8 py-3">Explore Services</a>
-                        </div>
+        <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0">
+            <img src="assets/images/fabrication-workshop.jpg" alt="Custom Heat Exchanger Manufacturing" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="container mx-auto px-6 relative z-20 h-full flex flex-col justify-center text-left">
+                <div class="max-w-4xl">
+                    <span class="text-lg md:text-xl font-semibold text-brand-blue mb-3 uppercase tracking-widest">Design & Build</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-snug mb-5">
+                        Custom Heat Exchanger **Fabrication**
+                    </h1>
+                    <p class="text-xl md:text-2xl font-light text-gray-300 mb-10 max-w-2xl">
+                        Bespoke thermal solutions built to your exact specifications and TEMA/ASME codes.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="service-manufacturing.html" class="btn btn-red text-lg px-8 py-4 w-full sm:w-auto">View Manufacturing</a>
+                        <a href="contact.html" class="btn border border-white text-white text-lg px-8 py-4 w-full sm:w-auto hover:bg-white hover:text-zinc-900 transition-colors">Request a Design</a>
                     </div>
                 </div>
-
-                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
-                    <img src="assets/images/ndt-testing.jpg" alt="Advanced Testing & Inspection" class="w-full h-full object-cover opacity-50">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent/30"></div>
-                    <div class="container mx-auto px-6 relative z-20 h-full flex flex-col justify-center text-center">
-                        <div class="max-w-4xl mx-auto">
-                            <span class="block text-xl md:text-2xl font-semibold text-brand-blue mb-4 uppercase">Quality Assurance</span>
-                            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">Advanced Testing (NDT)</h1>
-                            <p class="text-xl md:text-2xl font-light text-gray-300 mb-10">Using state-of-the-art diagnostics (Hydrotesting, Helium Leak, IRIS) to ensure integrity.</p>
-                            <a href="services.html" class="btn btn-primary text-lg px-8 py-3">Explore Services</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
-                    <img src="assets/images/on-site-cleaning.jpg" alt="Industrial Cleaning" class="w-full h-full object-cover opacity-50">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent/30"></div>
-                    <div class="container mx-auto px-6 relative z-20 h-full flex flex-col justify-center text-center">
-                        <div class="max-w-4xl mx-auto">
-                            <span class="block text-xl md:text-2xl font-semibold text-brand-blue mb-4 uppercase">Maintenance</span>
-                            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">Industrial Cleaning</h1>
-                            <p class="text-xl md:text-2xl font-light text-gray-300 mb-10">Removing tough deposits to dramatically restore thermal efficiency and flow.</p>
-                            <a href="services.html" class="btn btn-primary text-lg px-8 py-3">Explore Services</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
-                    <img src="assets/images/tube-supply.jpg" alt="Tube Supply" class="w-full h-full object-cover opacity-50">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent/30"></div>
-                    <div class="container mx-auto px-6 relative z-20 h-full flex flex-col justify-center text-center">
-                        <div class="max-w-4xl mx-auto">
-                            <span class="block text-xl md:text-2xl font-semibold text-brand-blue mb-4 uppercase">Product Supply</span>
-                            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">High-Quality Tube Supply</h1>
-                            <p class="text-xl md:text-2xl font-light text-gray-300 mb-10">Reliable supply of all critical components, including tubes, finned tubes, and gaskets.</p>
-                            <a href="products.html" class="btn btn-secondary text-lg px-8 py-3 text-white border-white hover:bg-white hover:text-black">View Products</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <button id="prev-slide" class="absolute top-1/2 left-4 z-30 -translate-y-1/2 text-white/50 hover:text-white p-3 text-4xl">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button id="next-slide" class="absolute top-1/2 right-4 z-30 -translate-y-1/2 text-white/50 hover:text-white p-3 text-4xl">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-
-            <div class="slider-dots absolute bottom-8 left-1/2 z-30 -translate-x-1/2 flex space-x-3">
-                <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all" data-slide="0"></button>
-                <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all" data-slide="1"></button>
-                <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all" data-slide="2"></button>
-                <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all" data-slide="3"></button>
-            </div>
-        </section>
-        <section id="about" class="py-24 bg-white fade-in-section">
-            <div class="container mx-auto px-6">
-                 <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <span class="text-sm font-semibold uppercase tracking-wider text-brand-blue">About Narmada Engineering</span>
-                        <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-6">Your Trusted Partner in Thermal Engineering</h2>
-                        <p class="text-lg text-zinc-700 mb-4">For over two decades, Narmada Engineering has been at the forefront of the heat exchanger industry. We specialize in providing robust, efficient, and reliable solutions tailored to meet the unique needs of our clients.</p>
-                        <p class="text-lg text-zinc-700 mb-8">Our commitment to quality, innovation, and customer satisfaction has made us a leader in the field. We are not just vendors; we are partners in your success.</p>
-                        <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
-                    </div>
-                    <div>
-                        <img src="assets/images/our-team.jpg" alt="Narmada Engineering team reviewing technical drawings" class="rounded-xl shadow-xl w-full">
-                    </div>
-                 </div>
-            </div>
-        </section>
-
-        <section id="core-areas" class="py-24 bg-slate-50 fade-in-section">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="text-sm font-semibold uppercase tracking-wider text-brand-red">What We Do</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-4">Our Core Business Areas</h2>
-                    <p class="text-lg text-zinc-700">We provide complete, end-to-end solutions for all your thermal equipment needs.</p>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <a href="service-manufacturing.html" class="block info-card overflow-hidden group">
-                        <img src="assets/images/fabrication-workshop.jpg" alt="Custom Manufacturing" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                        <div class="p-8">
-                            <i class="fas fa-industry text-3xl text-brand-blue mb-4"></i>
-                            <h3 class="text-2xl font-bold mb-3 text-zinc-900">Custom Manufacturing</h3>
-                            <p class="text-zinc-600 mb-6">Bespoke design and fabrication of new heat exchangers, built to TEMA and ASME standards.</p>
-                            <span class="font-semibold text-brand-blue text-lg">View Manufacturing →</span>
-                        </div>
-                    </a>
-                    <a href="services.html" class="block info-card overflow-hidden group">
-                        <img src="assets/images/retubing-service.jpg" alt="Restoration & Repair" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                        <div class="p-8">
-                            <i class="fas fa-sync-alt text-3xl text-brand-blue mb-4"></i>
-                            <h3 class="text-2xl font-bold mb-3 text-zinc-900">Restoration & Repair</h3>
-                            <p class="text-zinc-600 mb-6">Complete restoration of existing units, including on-site retubing, NDT testing, and industrial cleaning.</p>
-                            <span class="font-semibold text-brand-blue text-lg">View Services →</span>
-                        </div>
-                    </a>
-                    <a href="products.html" class="block info-card overflow-hidden group">
-                        <img src="assets/images/tube-supply.jpg" alt="Product Supply" class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                        <div class="p-8">
-                            <i class="fas fa-cogs text-3xl text-brand-blue mb-4"></i>
-                            <h3 class="text-2xl font-bold mb-3 text-zinc-900">Product & Spare Supply</h3>
-                            <p class="text-zinc-600 mb-6">Reliable supply of all critical components, including tubes, finned tubes, gaskets, and spare parts.</p>
-                            <span class="font-semibold text-brand-blue text-lg">View Products →</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="why-us" class="py-24 bg-white fade-in-section">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="text-sm font-semibold uppercase tracking-wider text-brand-blue">Our Promise</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-4">Why Choose Narmada Engineering?</h2>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8 text-center">
-                    <div class="p-6">
-                        <i class="fas fa-medal text-5xl text-brand-red mb-6"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">Unmatched Quality</h3>
-                        <p class="text-zinc-600">We adhere to the highest international standards, using premium materials and rigorous testing to ensure every product is built to last.</p>
-                    </div>
-                    <div class="p-6">
-                        <i class="fas fa-cogs text-5xl text-brand-red mb-6"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">Advanced Technology</h3>
-                        <p class="text-zinc-600">Leveraging the latest in thermal design software and manufacturing techniques to deliver efficient and innovative solutions.</p>
-                    </div>
-                    <div class="p-6">
-                        <i class="fas fa-users text-5xl text-brand-red mb-6"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-zinc-900">Customer-Centric</h3>
-                        <p class="text-zinc-600">Your needs are our priority. We work closely with you from concept to completion to ensure total satisfaction.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 bg-slate-50 fade-in-section">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-zinc-900 mb-4">Ready to Discuss Your Next Project?</h2>
-                <p class="text-lg text-zinc-700 max-w-2xl mx-auto mb-8">Let our experts design the perfect thermal solution for your needs. Contact us today for a consultation and quote.</p>
-                <a href="contact.html" class="btn btn-primary text-lg px-8 py-3">Get a Quote</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-zinc-900 text-gray-300 py-16">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <a href="index.html" class="flex items-center space-x-3 mb-4">
-                        <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering" class="h-10 w-auto opacity-80">
-                    </a>
-                    <p class="text-gray-400">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Our Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="service-manufacturing.html" class="text-gray-400 hover:text-white">Custom Manufacturing</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Restoration & Repair</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">On-Site Cleaning</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">NDT Testing</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="products.html" class="text-gray-400 hover:text-white">Products</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start space-x-3">
-                            <i class="fas fa-map-marker-alt mt-1 text-brand-blue"></i>
-                            <span>581, Amrai Katara hills Road, Baghsewania, Bhopal, MP, 462043</span>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <i class="fas fa-phone mt-1 text-brand-blue"></i>
-                            <span>+91-82696-44912</span>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <i class="fas fa-envelope mt-1 text-brand-blue"></i>
-                            <span>narmada.engbpl@gmail.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-gray-500">
-                <p>© <span id="current-year"></span> Narmada Engineering. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
 
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-brand-red text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 z-40 hidden">
-        <i class="fas fa-arrow-up text-lg"></i>
+        <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0">
+            <img src="assets/images/ndt-testing.jpg" alt="Advanced NDT Testing" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="container mx-auto px-6 relative z-20 h-full flex flex-col justify-center text-left">
+                <div class="max-w-4xl">
+                    <span class="text-lg md:text-xl font-semibold text-brand-red mb-3 uppercase tracking-widest">Quality Assurance</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-snug mb-5">
+                        Advanced **Non-Destructive Testing**
+                    </h1>
+                    <p class="text-xl md:text-2xl font-light text-gray-300 mb-10 max-w-2xl">
+                        Using Hydrotesting, Helium Leak Detection, and IRIS to ensure total operational integrity.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="services.html" class="btn btn-red text-lg px-8 py-4 w-full sm:w-auto">View NDT Services</a>
+                        <a href="contact.html" class="btn border border-white text-white text-lg px-8 py-4 w-full sm:w-auto hover:bg-white hover:text-zinc-900 transition-colors">Book Inspection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="prev-slide" class="absolute top-1/2 left-4 z-30 -translate-y-1/2 text-white bg-black/30 hover:bg-black/60 p-4 rounded-full transition-colors text-3xl">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button id="next-slide" class="absolute top-1/2 right-4 z-30 -translate-y-1/2 text-white bg-black/30 hover:bg-black/60 p-4 rounded-full transition-colors text-3xl">
+        <i class="fas fa-chevron-right"></i>
     </button>
 
-    <script src="js/script.js"></script>
-</body>
-</html>
+    <div class="slider-dots absolute bottom-8 left-1/2 z-30 -translate-x-1/2 flex space-x-3">
+        <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all" data-slide="0"></button>
+        <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all" data-slide="1"></button>
+        <button class="slider-dot h-3 w-3 rounded-full bg-white/50 transition-all" data-slide="2"></button>
+    </div>
+</section>

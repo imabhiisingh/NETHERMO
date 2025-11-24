@@ -1,149 +1,117 @@
-/*
-FINAL SCRIPT for Narmada Engineering
-*/
-// --- Set current year in footer ---
-const currentYearSpan = document.getElementById('current-year');
-if (currentYearSpan) {
-currentYearSpan.textContent = new Date().getFullYear();
-}
-// --- Header scroll effect ---
-const header = document.getElementById('home-header');
-if (header) {
-window.addEventListener('scroll', () => {
-if (window.scrollY > 50) {
-header.classList.add('scrolled');
-} else {
-header.classList.remove('scrolled');
-}
-});
-}
-// --- Back to Top button functionality ---
-const backToTopButton = document.getElementById('back-to-top');
-if (backToTopButton) {
-window.addEventListener('scroll', () => {
-if (window.scrollY > 300) {
-backToTopButton.classList.remove('hidden');
-} else {
-backToTopButton.classList.add('hidden');
-}
-});
-backToTopButton.addEventListener('click', () => {
-window.scrollTo({
-top: 0,
-behavior: 'smooth'
-});
-});
-}
-// --- Intersection Observer for fade-in-on-scroll animations ---
-const animatedElements = document.querySelectorAll('.fade-in-section');
-const observer = new IntersectionObserver((entries) => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add('in-view');
-observer.unobserve(entry.target); // Stop observing once animated
-}
-});
-}, { threshold: 0.1 }); // Trigger when 10% of the element is visible
-animatedElements.forEach(element => {
-observer.observe(element);
-});
-// --- Mobile Menu Toggle ---
-const menuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-if (menuButton && mobileMenu) {
-menuButton.addEventListener('click', () => {
-// This line adds or removes the 'hidden' class to show/hide the menu
-mobileMenu.classList.toggle('hidden');
-});
-}
+// Function to handle the auto-slide and navigation logic
+function initHeroSlider() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    const prevButton = document.getElementById('prev-slide');
+    const nextButton = document.getElementById('next-slide');
+    
+    // Set a much faster autoslide interval (3000ms = 3 seconds)
+    const AUTO_SLIDE_INTERVAL = 3000; 
+    let currentSlide = 0;
+    let slideTimer;
 
-// --- NEW AUTOMATIC HERO SLIDER (WITH BUTTONS) ---
-document.addEventListener('DOMContentLoaded', () => {
-    const sliderContainer = document.getElementById('hero-slider-container');
-    if (sliderContainer) {
-        const slides = document.querySelectorAll('.hero-slide');
-        const dots = document.querySelectorAll('.slider-dot');
-        // --- बटन को जोड़ा गया ---
-        const nextBtn = document.getElementById('next-slide');
-        const prevBtn = document.getElementById('prev-slide');
-        // ---
-        let currentSlide = 0;
-        let slideInterval;
-
-        const showSlide = (n) => {
-            // इंडेक्स को संभालें
-            if (n >= slides.length) {
-                currentSlide = 0;
-            } else if (n < 0) {
-                currentSlide = slides.length - 1;
-            } else {
-                currentSlide = n;
+    // Sets the opacity and active dot class
+    function updateSlider(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('opacity-100', 'z-10');
+            slide.classList.add('opacity-0');
+            if (i === index) {
+                slide.classList.add('opacity-100', 'z-10');
             }
-
-            // सभी स्लाइड्स को छिपाएं और सही को दिखाएं
-            slides.forEach((slide, index) => {
-                if (index === currentSlide) {
-                    slide.classList.remove('opacity-0');
-                    slide.classList.add('opacity-100');
-                } else {
-                    slide.classList.remove('opacity-100');
-                    slide.classList.add('opacity-0');
-                }
-            });
-
-            // डॉट्स को अपडेट करें
-            dots.forEach((dot, index) => {
-                if (index === currentSlide) {
-                    dot.classList.add('bg-white');
-                    dot.classList.remove('bg-white/50');
-                } else {
-                    dot.classList.remove('bg-white');
-                    dot.classList.add('bg-white/50');
-                }
-            });
-        };
-
-        const nextSlide = () => {
-            showSlide(currentSlide + 1);
-        };
-        
-        // --- पिछला स्लाइड फ़ंक्शन जोड़ा गया ---
-        const prevSlide = () => {
-            showSlide(currentSlide - 1);
-        };
-        // ---
-
-        const resetInterval = () => {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(nextSlide, 5000); // 5 सेकंड
-        };
-
-        // --- बटन क्लिक लिस्नर जोड़े गए ---
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                nextSlide();
-                resetInterval();
-            });
-        }
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                prevSlide();
-                resetInterval();
-            });
-        }
-        // ---
-
-        // डॉट्स पर क्लिक इवेंट्स
-        dots.forEach((dot) => {
-            dot.addEventListener('click', (e) => {
-                const slideIndex = parseInt(e.target.getAttribute('data-slide'));
-                showSlide(slideIndex);
-                resetInterval();
-            });
         });
 
-        // स्लाइडर शुरू करें
-        showSlide(0); // पहली स्लाइड तुरंत दिखाएं
-        slideInterval = setInterval(nextSlide, 5000); // ऑटो-स्लाइड शुरू करें
+        dots.forEach((dot, i) => {
+            dot.classList.remove('bg-white', 'w-8');
+            dot.classList.add('bg-white/50', 'w-3');
+            if (i === index) {
+                dot.classList.remove('bg-white/50', 'w-3');
+                dot.classList.add('bg-white', 'w-8');
+            }
+        });
     }
+
+    // Handles moving to the next slide
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlider(currentSlide);
+        resetTimer();
+    }
+
+    // Handles moving to the previous slide
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlider(currentSlide);
+        resetTimer();
+    }
+    
+    // Resets the auto-slide timer
+    function resetTimer() {
+        clearTimeout(slideTimer);
+        slideTimer = setTimeout(nextSlide, AUTO_SLIDE_INTERVAL);
+    }
+
+    // Event listeners for navigation
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', (e) => {
+            const index = parseInt(e.target.dataset.slide);
+            currentSlide = index;
+            updateSlider(currentSlide);
+            resetTimer();
+        });
+    });
+
+    // Initialize the slider
+    updateSlider(currentSlide);
+    resetTimer(); // Start the auto-slide timer
+}
+
+// Mobile Menu Toggle Logic
+function initMobileMenu() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+}
+
+// Back to Top Button Logic
+function initBackToTop() {
+    const backToTopButton = document.getElementById('back-to-top');
+    if (backToTopButton) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+}
+
+// Footer Year Logic
+function setFooterYear() {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+}
+
+
+// Run all initializations when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    initHeroSlider();
+    initMobileMenu();
+    initBackToTop();
+    setFooterYear();
 });
