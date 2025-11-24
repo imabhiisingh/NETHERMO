@@ -84,3 +84,12 @@
 .hero-slide {
     transition: opacity 500ms ease-in-out;
 }
+/* --- Mobile Slider Ratio Adjustment --- */
+
+@media (max-width: 640px) {
+    /* Targets screens smaller than the Tailwind 'sm' breakpoint */
+    #hero {
+        /* Sets the height to 75% of the viewport height on mobile devices */
+        height: 55vh !important; 
+    }
+}
