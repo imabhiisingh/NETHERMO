@@ -13,22 +13,22 @@
 </head>
 <body class="bg-white text-zinc-900">
 
-    <header id="home-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header id="main-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
             
             <a href="index.html" class="flex items-center">
                 <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering - Heat Exchanger Expert" class="h-12 w-auto">
             </a>
 
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About Us</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="products.html" class="nav-link">Products</a>
-                <a href="contact.html" class="text-brand-blue font-semibold nav-link">Contact</a>
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+                <a href="index.html" class="nav-link hover:text-brand-red">Home</a>
+                <a href="about.html" class="nav-link hover:text-brand-red">About Us</a>
+                <a href="services.html" class="nav-link hover:text-brand-red">Services</a>
+                <a href="products.html" class="nav-link hover:text-brand-red">Products</a>
+                <a href="contact.html" class="text-brand-blue font-semibold nav-link hover:text-brand-red">Contact</a>
             </nav>
 
-            <a href="contact.html" class="hidden md:inline-block btn btn-red text-white font-semibold py-2 px-5 rounded-lg shadow-md">Get a Quote</a>
+            <a href="contact.html" class="hidden md:inline-block bg-brand-red text-white font-semibold py-2 px-5 rounded-lg shadow-md hover:bg-red-700 transition-colors">Get a Quote</a>
 
             <button id="mobile-menu-button" class="md:hidden text-3xl text-zinc-800">
                 <i class="fas fa-bars"></i>
@@ -41,30 +41,28 @@
                 <a href="about.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">About Us</a>
                 <a href="services.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Services</a>
                 <a href="products.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Products</a>
-                <a href="contact.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Contact</a>
-                <a href="contact.html" class="btn btn-red text-white text-center mt-2">Get a Quote</a>
+                <a href="contact.html" class="block px-3 py-2 rounded text-zinc-700 font-semibold hover:bg-slate-100">Contact</a>
+                <a href="contact.html" class="bg-brand-red text-white text-center py-2 px-3 rounded-lg mt-2 hover:bg-red-700 transition-colors">Get a Quote</a>
             </nav>
         </div>
     </header>
 
-    <main class="pt-20">
+    <main class="pt-[80px]">
 
-        <section class="py-24 bg-slate-50">
-            <div class="container mx-auto px-6 text-center max-w-4xl">
-                <span class="text-lg font-semibold uppercase tracking-widest text-brand-blue mb-3 block">Start Your Project</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold text-zinc-900 mb-6">Contact Us & Get a Quote</h1>
-                <p class="text-xl md:text-2xl text-zinc-700 mx-auto">Please fill out our inquiry form below. Our engineering team will review your specifications and contact you shortly.</p>
+        <section class="py-16 md:py-24 bg-slate-50 text-center">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-900 mb-4">Contact Us & Get a Quote</h1>
+                <p class="text-lg md:text-xl text-zinc-700 max-w-3xl mx-auto">Please fill out our inquiry form below. Our engineering team will review your specifications and contact you shortly.</p>
             </div>
         </section>
 
-        <section id="contact-form" class="py-16 md:py-24 fade-in-section">
-            <div class="container mx-auto px-6 max-w-3xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mb-8 text-center">Inquiry Form</h2>
+        <section id="contact-form" class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 max-w-3xl">
                 
                 <form 
                   id="contact-form-main"
                   action="https://formspree.io/f/mqaggdvp" method="POST"
-                  class="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-gray-200 space-y-6"
+                  class="bg-white p-6 md:p-10 rounded-xl shadow-2xl border border-gray-200 space-y-6"
                 >
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
@@ -128,7 +126,7 @@
                     </div>
 
                     <div class="text-center pt-4">
-                        <button type="submit" class="btn btn-red text-lg py-3 px-12">Send Inquiry</button>
+                        <button type="submit" class="bg-brand-red text-white font-bold text-lg py-3 px-12 rounded-lg hover:bg-red-700 transition-colors shadow-xl">Send Inquiry</button>
                     </div>
                     
                     <p id="form-status" class="text-center text-zinc-600"></p>
@@ -137,16 +135,16 @@
             </div>
         </section>
 
-        <section class="py-24 bg-slate-50 fade-in-section">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto mb-16">
+        <section class="py-16 md:py-24 bg-slate-50">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-4">Or Reach Us Directly</h2>
                     <p class="text-lg text-zinc-700">You can also contact us by phone or email, or visit our office during business hours.</p>
                 </div>
                 
-                <div class="grid md:grid-cols-2 gap-12 text-left max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 text-left max-w-5xl mx-auto">
                     
-                    <div class="space-y-10">
+                    <div class="space-y-8">
                         <div class="flex items-start space-x-4">
                             <i class="fas fa-map-marker-alt mt-1 text-3xl text-brand-red"></i>
                             <div>
@@ -163,7 +161,7 @@
                         </div>
                     </div>
                     
-                    <div class="space-y-10">
+                    <div class="space-y-8">
                         <div class="flex items-start space-x-4">
                             <i class="fas fa-phone mt-1 text-3xl text-brand-red"></i>
                             <div>
@@ -186,18 +184,18 @@
 
     </main>
 
-    <footer class="bg-zinc-900 text-gray-300 py-16">
-        <div class="container mx-auto px-6">
-             <div class="grid md:grid-cols-4 gap-8">
-                <div>
+    <footer class="bg-zinc-900 text-gray-300 py-12 md:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
                     <a href="index.html" class="flex items-center space-x-3 mb-4">
                         <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering" class="h-10 w-auto opacity-80">
                     </a>
-                    <p class="text-gray-400">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
+                    <p class="text-gray-400 text-sm">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Our Services</h4>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-sm">
                         <li><a href="service-manufacturing.html" class="text-gray-400 hover:text-white">Custom Manufacturing</a></li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">Restoration & Repair</a></li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">On-Site Cleaning</a></li>
@@ -206,7 +204,7 @@
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-sm">
                         <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
                         <li><a href="products.html" class="text-gray-400 hover:text-white">Products</a></li>
                         <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
@@ -215,7 +213,7 @@
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
-                    <ul class="space-y-3 text-gray-400">
+                    <ul class="space-y-3 text-gray-400 text-sm">
                         <li class="flex items-start space-x-3">
                             <i class="fas fa-map-marker-alt mt-1 text-brand-blue"></i>
                             <span>581, Amrai Katara hills Road, Baghsewania, Bhopal, MP, 462043</span>
@@ -231,7 +229,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-gray-500">
+            <div class="mt-8 pt-6 border-t border-zinc-800 text-center text-gray-500 text-sm">
                 <p>© <span id="current-year"></span> Narmada Engineering. All Rights Reserved.</p>
             </div>
         </div>

@@ -1,110 +1,86 @@
-/*
-FINAL PROFESSIONAL STYLESHEET for Narmada Engineering
-*/
-body {
-font-family: 'Poppins', sans-serif;
-background-color: #ffffff; /* Clean white background */
-color: #18181b; /* Dark text (zinc-900) for readability */
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-/* --- Brand Colors --- */
+/* --- Custom Color Definitions for Tailwind classes --- */
+/* These map to the Tailwind classes used throughout the HTML */
 :root {
---brand-red: #d92525;
---brand-blue: #0052cc;
---light-bg: #ffffff;
---light-card: #f9fafb; /* Very light gray (gray-50) */
---dark-text: #18181b;  /* zinc-900 */
---medium-text: #52525b; /* zinc-600 */
+    --color-brand-red: #E31B23; /* Primary Action Color */
+    --color-brand-blue: #004d99; /* Primary Branding Color */
 }
-/* --- Header --- */
-#home-header {
-transition: all 0.3s ease-in-out;
-}
-#home-header.scrolled {
-background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
-box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-backdrop-filter: blur(8px);
-}
-/* --- Navigation Link Hover --- */
+
+/* Define custom Tailwind classes not available by default */
+/* You would typically use tailwind.config.js for this, but for simple CSS output: */
+.text-brand-red { color: var(--color-brand-red); }
+.text-brand-blue { color: var(--color-brand-blue); }
+.bg-brand-red { background-color: var(--color-brand-red); }
+.bg-brand-blue { background-color: var(--color-brand-blue); }
+
+/* --- General Link/Button Styles --- */
+
+/* Navigation Links */
 .nav-link {
-position: relative;
-transition: color 0.3s ease;
-color: #3f3f46; /* zinc-700 */
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
 }
-.nav-link:hover {
-color: var(--brand-blue);
-}
-.nav-link::after {
-content: '';
-position: absolute;
-width: 0;
-height: 2px;
-bottom: -6px;
-left: 0;
-background-color: var(--brand-blue);
-transition: width 0.3s ease;
-}
-.nav-link:hover::after {
-width: 100%;
-}
-/* --- Button Styles --- */
+
+/* Button Reset (Ensures consistent button styling across files) */
 .btn {
-padding: 10px 24px;
-border-radius: 8px;
-font-weight: 600;
-transition: all 0.3s ease-in-out;
-display: inline-block;
-font-size: 0.95rem;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-decoration: none; 
+    white-space: nowrap;
+    border: none;
 }
-.btn-primary {
-background-color: var(--brand-blue);
-color: white;
-box-shadow: 0 4px 14px rgba(0, 82, 204, 0.25);
-}
-.btn-primary:hover {
-background-color: #0041a3;
-transform: translateY(-2px);
-box-shadow: 0 6px 16px rgba(0, 82, 204, 0.3);
-}
+
+/* Primary CTA Button Style */
 .btn-red {
-background-color: var(--brand-red);
-color: white;
-box-shadow: 0 4px 14px rgba(217, 37, 37, 0.25);
+    background-color: var(--color-brand-red);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .btn-red:hover {
-background-color: #b91c1c;
-transform: translateY(-2px);
-box-shadow: 0 6px 16px rgba(217, 37, 37, 0.3);
+    background-color: #b3161c; /* Slightly darker red on hover */
+    transform: translateY(-1px);
 }
+
+/* Secondary/Alternative Button Style */
+.btn-primary {
+    background-color: var(--color-brand-blue);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #003366;
+    transform: translateY(-1px);
+}
+
+/* Tertiary Button Style */
 .btn-secondary {
-background-color: transparent;
-color: var(--brand-blue);
-border: 2px solid var(--brand-blue);
+    background-color: white;
+    color: var(--color-brand-blue);
+    border: 2px solid var(--color-brand-blue);
 }
+
 .btn-secondary:hover {
-background-color: var(--brand-blue);
-color: white;
-transform: translateY(-2px);
+    background-color: var(--color-brand-blue);
+    color: white;
 }
-/* --- Card Hover Effect --- */
+
+/* Card Hover Effect */
 .info-card {
-background-color: var(--light-card);
-border: 1px solid #e5e7eb; /* gray-200 */
-border-radius: 12px;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .info-card:hover {
-transform: translateY(-8px);
-box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
-/* --- Section Fade-in Animation --- */
-.fade-in-section {
-opacity: 0;
-transform: translateY(30px);
-transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-.fade-in-section.in-view {
-opacity: 1;
-transform: translateY(0);
+
+/* Ensure the hero slide transition is smooth */
+.hero-slide {
+    transition: opacity 500ms ease-in-out;
 }

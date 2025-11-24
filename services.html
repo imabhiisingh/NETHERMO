@@ -13,19 +13,19 @@
 </head>
 <body class="bg-white text-zinc-900">
 
-    <header id="home-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header id="main-header" class="bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
                 <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering - Heat Exchanger Expert" class="h-12 w-auto">
             </a>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About Us</a>
-                <a href="services.html" class="text-brand-blue font-semibold nav-link">Services</a>
-                <a href="products.html" class="nav-link">Products</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+                <a href="index.html" class="nav-link hover:text-brand-red">Home</a>
+                <a href="about.html" class="nav-link hover:text-brand-red">About Us</a>
+                <a href="services.html" class="text-brand-blue font-semibold nav-link hover:text-brand-red">Services</a>
+                <a href="products.html" class="nav-link hover:text-brand-red">Products</a>
+                <a href="contact.html" class="nav-link hover:text-brand-red">Contact</a>
             </nav>
-            <a href="contact.html" class="hidden md:inline-block btn btn-red text-white font-semibold py-2 px-5 rounded-lg shadow-md">Get a Quote</a>
+            <a href="contact.html" class="hidden md:inline-block bg-brand-red text-white font-semibold py-2 px-5 rounded-lg shadow-md hover:bg-red-700 transition-colors">Get a Quote</a>
             <button id="mobile-menu-button" class="md:hidden text-3xl text-zinc-800">
                 <i class="fas fa-bars"></i>
             </button>
@@ -34,79 +34,79 @@
             <nav class="flex flex-col p-4 space-y-3">
                 <a href="index.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Home</a>
                 <a href="about.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">About Us</a>
-                <a href="services.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Services</a>
+                <a href="services.html" class="block px-3 py-2 rounded text-zinc-700 font-semibold hover:bg-slate-100">Services</a>
                 <a href="products.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Products</a>
                 <a href="contact.html" class="block px-3 py-2 rounded text-zinc-700 hover:bg-slate-100">Contact</a>
-                <a href="contact.html" class="btn btn-red text-white text-center mt-2">Get a Quote</a>
+                <a href="contact.html" class="bg-brand-red text-white text-center py-2 px-3 rounded-lg mt-2 hover:bg-red-700 transition-colors">Get a Quote</a>
             </nav>
         </div>
     </header>
 
-    <main class="pt-20">
+    <main class="pt-[80px]">
 
-        <section class="py-24 bg-slate-50">
-            <div class="container mx-auto px-6 text-center max-w-4xl">
-                <span class="text-lg font-semibold uppercase tracking-widest text-brand-red mb-3 block">Field & Workshop Services</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold text-zinc-900 mb-6">Restore Peak Performance, Guaranteed.</h1>
-                <p class="text-xl md:text-2xl text-zinc-700 mx-auto">Don't replace your heat exchanger—restore it! We offer superior, cost-effective solutions for full unit restoration and maintenance.</p>
+        <section class="py-16 md:py-24 bg-slate-50">
+            <div class="container mx-auto px-4 sm:px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-brand-red mb-4">Stop! Don't Replace Your Heat Exchanger—Restore It!</h1>
+                <p class="text-lg md:text-xl text-zinc-700 max-w-3xl mx-auto mb-6">Is your existing unit experiencing reduced efficiency or breakdowns? Before you commit to a new purchase, Narmada Engineering offers a superior, cost-effective, and guaranteed restoration solution.</p>
+                <p class="text-lg md:text-xl text-zinc-700 max-w-3xl mx-auto">We specialize in bringing your existing units back to peak performance, ensuring they operate "as new" in all critical aspects of efficiency and reliability.</p>
             </div>
         </section>
 
-        <section class="py-24 fade-in-section">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto mb-16">
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-4">Our Proven End-to-End Restoration Procedure</h2>
                     <p class="text-lg text-zinc-700">We follow a meticulously planned, multi-stage procedure executed by certified experts to deliver guaranteed results with minimal downtime.</p>
                 </div>
                 
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                    <div class="info-card p-6 bg-white shadow-lg rounded-xl border-t-4 border-brand-blue">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-blue">
                         <div class="flex items-center justify-center w-16 h-16 bg-brand-blue text-white rounded-full text-2xl font-bold mx-auto mb-4">1</div>
                         <h3 class="text-xl font-bold mb-3 text-zinc-900">On-Site Assessment</h3>
                         <p class="text-zinc-600">Our team is deployed to your facility to conduct an in-depth inspection and use advanced diagnostics to pinpoint the root cause of failure.</p>
                     </div>
-                    <div class="info-card p-6 bg-white shadow-lg rounded-xl border-t-4 border-brand-blue">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-blue">
                         <div class="flex items-center justify-center w-16 h-16 bg-brand-blue text-white rounded-full text-2xl font-bold mx-auto mb-4">2</div>
                         <h3 class="text-xl font-bold mb-3 text-zinc-900">Flexible Execution</h3>
                         <p class="text-zinc-600">We offer flexible solutions, including **In-Situ (On-Site)** repair to reduce costs, or **Ex-Situ (Workshop)** repair for complex fabrication work.</p>
                     </div>
-                    <div class="info-card p-6 bg-white shadow-lg rounded-xl border-t-4 border-brand-blue">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-blue">
                         <div class="flex items-center justify-center w-16 h-16 bg-brand-blue text-white rounded-full text-2xl font-bold mx-auto mb-4">3</div>
                         <h3 class="text-xl font-bold mb-3 text-zinc-900">Precision Replacement</h3>
                         <p class="text-zinc-600">We procure or manufacture all replacement parts (tubes, baffles) to meet API/ASME standards, using state-of-the-art expansion tools.</p>
                     </div>
-                    <div class="info-card p-6 bg-white shadow-lg rounded-xl border-t-4 border-brand-blue">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-blue">
                         <div class="flex items-center justify-center w-16 h-16 bg-brand-blue text-white rounded-full text-2xl font-bold mx-auto mb-4">4</div>
                         <h3 class="text-xl font-bold mb-3 text-zinc-900">QC & Guarantee</h3>
                         <p class="text-zinc-600">No unit is returned without passing rigorous QC checks, including hydrotesting and leak detection, ensuring it performs like new.</p>
                     </div>
                 </div>
 
-                <div class="max-w-5xl mx-auto mt-20 overflow-x-auto">
+                <div class="max-w-5xl mx-auto mt-16 md:mt-20 overflow-x-auto">
                     <h3 class="text-2xl md:text-3xl font-bold text-zinc-900 mb-6 text-center">Final Quality Control (QC) & Performance Guarantee</h3>
                     <table class="w-full text-left border border-gray-200 divide-y divide-gray-200">
                         <thead class="bg-gray-100">
                             <tr>
-                                <th class="px-6 py-3 text-sm font-semibold text-zinc-800 uppercase tracking-wider">QC Inspection Aspect</th>
-                                <th class="px-6 py-3 text-sm font-semibold text-zinc-800 uppercase tracking-wider">Test Method</th>
-                                <th class="px-6 py-3 text-sm font-semibold text-zinc-800 uppercase tracking-wider">Purpose</th>
+                                <th class="px-4 py-3 text-sm font-semibold text-zinc-800 uppercase tracking-wider">QC Inspection Aspect</th>
+                                <th class="px-4 py-3 text-sm font-semibold text-zinc-800 uppercase tracking-wider">Test Method</th>
+                                <th class="px-4 py-3 text-sm font-semibold text-zinc-800 uppercase tracking-wider">Purpose</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white divide-y divide-gray-200">
                             <tr>
-                                <td class="px-6 py-4 font-semibold text-zinc-900">Pressure Integrity</td>
-                                <td class="px-6 py-4 text-zinc-700">Hydrotesting (Tube & Shell)</td>
-                                <td class="px-6 py-4 text-zinc-700">Verifies structural integrity and confirms zero leakage under maximum design pressure.</td>
+                                <td class="px-4 py-3 font-semibold text-zinc-900">Pressure Integrity</td>
+                                <td class="px-4 py-3 text-zinc-700">Hydrotesting (Tube & Shell)</td>
+                                <td class="px-4 py-3 text-zinc-700">Verifies structural integrity and confirms zero leakage under maximum design pressure.</td>
                             </tr>
                             <tr>
-                                <td class="px-6 py-4 font-semibold text-zinc-900">Micro-Leak Detection</td>
-                                <td class="px-6 py-4 text-zinc-700">Helium Leak Test</td>
-                                <td class="px-6 py-4 text-zinc-700">Detects minute leaks often missed by standard pressure tests, critical for vacuum applications.</td>
+                                <td class="px-4 py-3 font-semibold text-zinc-900">Micro-Leak Detection</td>
+                                <td class="px-4 py-3 text-zinc-700">Helium Leak Test</td>
+                                <td class="px-4 py-3 text-zinc-700">Detects minute leaks often missed by standard pressure tests, critical for vacuum applications.</td>
                             </tr>
                             <tr>
-                                <td class="px-6 py-4 font-semibold text-zinc-900">System Sealing</td>
-                                <td class="px-6 py-4 text-zinc-700">Pneumatic Test</td>
-                                <td class="px-6 py-4 text-zinc-700">Confirms the integrity of flange joints and final assembly seals before fluid introduction.</td>
+                                <td class="px-4 py-3 font-semibold text-zinc-900">System Sealing</td>
+                                <td class="px-4 py-3 text-zinc-700">Pneumatic Test</td>
+                                <td class="px-4 py-3 text-zinc-700">Confirms the integrity of flange joints and final assembly seals before fluid introduction.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -114,15 +114,15 @@
             </div>
         </section>
 
-        <section class="py-24 bg-slate-50 fade-in-section">
-            <div class="container mx-auto px-6 space-y-20">
+        <section class="py-16 md:py-24 bg-slate-50">
+            <div class="container mx-auto px-4 sm:px-6 space-y-16 md:space-y-20">
                 
                 <div class="text-center max-w-3xl mx-auto">
                     <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 mt-2 mb-4">Our Expert Field Services</h2>
                     <p class="text-lg text-zinc-700">We provide a comprehensive suite of on-site services dedicated to restoring, maintaining, and optimizing your shell and tube heat exchangers.</p>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div>
                         <img src="assets/images/retubing-service.jpg" alt="Precision retubing of a heat exchanger tube bundle" class="rounded-xl shadow-xl w-full">
                     </div>
@@ -132,7 +132,7 @@
                             <h3 class="text-3xl font-bold text-zinc-900">Precision Retubing</h3>
                         </div>
                         <p class="text-lg text-zinc-700 mb-4">Our technical team has executed over 100 major on-site retubing projects. We bring unparalleled expertise to your facility, ensuring minimal downtime.</p>
-                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside">
+                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside ml-4">
                             <li>Complete & Partial Tube Bundle Replacement</li>
                             <li>Expert Tube Extraction & Insertion</li>
                             <li>On-Site Tube Plugging & Repair</li>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div class="md:order-last">
                         <img src="assets/images/ndt-testing.jpg" alt="Advanced NDT testing (IRIS) on heat exchanger tubes" class="rounded-xl shadow-xl w-full">
                     </div>
@@ -152,7 +152,7 @@
                             <h3 class="text-3xl font-bold text-zinc-900">Advanced Testing & Inspection (NDT)</h3>
                         </div>
                         <p class="text-lg text-zinc-700 mb-4">We use state-of-the-art diagnostic technology to accurately assess equipment condition, pinpoint failures, and ensure operational integrity.</p>
-                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside">
+                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside ml-4">
                             <li>**Hydrotesting:** Pressure testing to verify structural integrity and leak tightness.</li>
                             <li>**Helium Leak Detection:** High-sensitivity method for locating micro-leaks.</li>
                             <li>**IRIS (Internal Rotary Inspection System):** Advanced ultrasonic technique for precise internal tube wall thickness data.</li>
@@ -160,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div>
                         <img src="assets/images/on-site-cleaning.jpg" alt="High-pressure hydro-jetting for industrial cleaning" class="rounded-xl shadow-xl w-full">
                     </div>
@@ -170,10 +170,8 @@
                             <h3 class="text-3xl font-bold text-zinc-900">Industrial Cleaning Solutions</h3>
                         </div>
                         <p class="text-lg text-zinc-700 mb-4">Our specialized services remove tough deposits and biological fouling, dramatically restoring thermal efficiency and flow.</p>
-                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside">
+                        <ul class="space-y-2 text-lg text-zinc-700 list-disc list-inside ml-4">
                             <li>**High-Pressure Hydro-Jetting:** Removes hard scale, sludge, and blockages.</li>
-                            <li>**Mechanical Brush Cleaning:** Scrubs away softer deposits with continuous water flow.</li>
-                            <li>**Hydrosand Blasting:** Abrasive blasting for thorough surface and shell cleaning.</li>
                             <li>**Chemical Cleaning (CIP):** Dissolves stubborn scale, rust, and process deposits.</li>
                         </ul>
                     </div>
@@ -181,27 +179,27 @@
             </div>
         </section>
 
-        <section class="py-24 fade-in-section">
-            <div class="container mx-auto px-6 text-center bg-brand-red text-white p-12 rounded-xl shadow-2xl">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Need Urgent Restoration or Repair?</h2>
-                <p class="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Our rapid-response team is ready to help. Contact us for a consultation to diagnose your issue and recommend the right solution.</p>
-                <a href="contact.html" class="btn bg-white text-zinc-900 text-lg px-10 py-4 font-bold transition-all duration-300 transform hover:scale-105 hover:bg-gray-100">Get a Consultation Now</a>
+        <section class="py-16 md:py-24 bg-white text-center">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h2 class="text-3xl font-bold text-zinc-900 mb-4">Need Urgent Service?</h2>
+                <p class="text-lg text-zinc-700 max-w-2xl mx-auto mb-8">Our rapid-response team is ready to help. Contact us for a consultation to diagnose your issue and recommend the right solution.</p>
+                <a href="contact.html" class="bg-brand-red text-white font-bold text-lg px-10 py-3 rounded-lg hover:bg-red-700 transition-colors shadow-xl">Get a Consultation</a>
             </div>
         </section>
     </main>
 
-    <footer class="bg-zinc-900 text-gray-300 py-16">
-        <div class="container mx-auto px-6">
-             <div class="grid md:grid-cols-4 gap-8">
-                <div>
+    <footer class="bg-zinc-900 text-gray-300 py-12 md:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
                     <a href="index.html" class="flex items-center space-x-3 mb-4">
                         <img src="assets/images/narmada-logo-full.png" alt="Narmada Engineering" class="h-10 w-auto opacity-80">
                     </a>
-                    <p class="text-gray-400">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
+                    <p class="text-gray-400 text-sm">Your trusted partner in thermal engineering, delivering quality and performance since 2000.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Our Services</h4>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-sm">
                         <li><a href="service-manufacturing.html" class="text-gray-400 hover:text-white">Custom Manufacturing</a></li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">Restoration & Repair</a></li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">On-Site Cleaning</a></li>
@@ -210,7 +208,7 @@
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-sm">
                         <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
                         <li><a href="products.html" class="text-gray-400 hover:text-white">Products</a></li>
                         <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
@@ -219,7 +217,7 @@
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
-                    <ul class="space-y-3 text-gray-400">
+                    <ul class="space-y-3 text-gray-400 text-sm">
                         <li class="flex items-start space-x-3">
                             <i class="fas fa-map-marker-alt mt-1 text-brand-blue"></i>
                             <span>581, Amrai Katara hills Road, Baghsewania, Bhopal, MP, 462043</span>
@@ -235,15 +233,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="mt-12 pt-8 border-t border-zinc-800 text-center text-gray-500">
+            <div class="mt-8 pt-6 border-t border-zinc-800 text-center text-gray-500 text-sm">
                 <p>© <span id="current-year"></span> Narmada Engineering. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-brand-red text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 z-40 hidden">
-        <i class="fas fa-arrow-up text-lg"></i>
-    </button>
 
     <script src="js/script.js"></script>
 </body>

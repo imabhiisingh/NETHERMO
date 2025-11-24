@@ -1,20 +1,13 @@
 // Function to handle the auto-slide and navigation logic
 function initHeroSlider() {
     const slides = document.querySelectorAll('.hero-slide');
-    // Ensure the dots container only has buttons for the active slides (3 slides now)
-    const dotsContainer = document.querySelector('.slider-dots');
-    if (dotsContainer) {
-        // Only keep the first three dots, remove the fourth one if it exists from old code
-        while (dotsContainer.children.length > slides.length) {
-            dotsContainer.removeChild(dotsContainer.lastChild);
-        }
-    }
-    
+    // Home page has 3 main slides now
+    const numSlides = 3; 
     const dots = document.querySelectorAll('.slider-dot');
     const prevButton = document.getElementById('prev-slide');
     const nextButton = document.getElementById('next-slide');
     
-    // Set a much faster autoslide interval (3000ms = 3 seconds)
+    // Set a fast autoslide interval (3000ms = 3 seconds)
     const AUTO_SLIDE_INTERVAL = 3000; 
     let currentSlide = 0;
     let slideTimer;
@@ -42,14 +35,15 @@ function initHeroSlider() {
 
     // Handles moving to the next slide
     function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
+        // Adjust slides.length to numSlides (3) if you want specific count
+        currentSlide = (currentSlide + 1) % numSlides; 
         updateSlider(currentSlide);
         resetTimer();
     }
-
+    
     // Handles moving to the previous slide
     function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        currentSlide = (currentSlide - 1 + numSlides) % numSlides;
         updateSlider(currentSlide);
         resetTimer();
     }
@@ -61,8 +55,8 @@ function initHeroSlider() {
     }
 
     // Event listeners for navigation
-    nextButton.addEventListener('click', nextSlide);
-    prevButton.addEventListener('click', prevSlide);
+    if (nextButton) nextButton.addEventListener('click', nextSlide);
+    if (prevButton) prevButton.addEventListener('click', prevSlide);
 
     dots.forEach(dot => {
         dot.addEventListener('click', (e) => {
@@ -73,9 +67,11 @@ function initHeroSlider() {
         });
     });
 
-    // Initialize the slider
-    updateSlider(currentSlide);
-    resetTimer(); // Start the auto-slide timer
+    // Initialize the slider if slides exist
+    if (slides.length > 0) {
+        updateSlider(currentSlide);
+        resetTimer(); 
+    }
 }
 
 // Mobile Menu Toggle Logic
@@ -86,6 +82,15 @@ function initMobileMenu() {
     if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            // Change icon from bars to close, or vice versa
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
         });
     }
 }
